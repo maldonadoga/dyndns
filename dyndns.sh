@@ -21,7 +21,7 @@ fi
 #echo $new $old
 if [ "$new" != "$old" ]
 then
-   echo "IP has changed to: $new"
+   echo `date '+%F %T'` "IP has changed to: $new"
    wget -O - http://freedns.afraid.org/dynamic/update.php?UmhISE9OaWRGSUNVTkRVQ1NkRktTVVVDOjEzMDE4OTUw >> $DYNDNS/freedns_maldonadoga_mooo_com.log
    echo $new > $DYNDNS/current_ip
 fi
