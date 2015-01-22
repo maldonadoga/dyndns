@@ -19,7 +19,7 @@ else
    old="First time"
 fi
 #echo $new $old
-if [ "$new" != "$old" ]
+if [ "$new" != "$old" ] && [ "$new" != "0.0.0.0" ]
 then
    echo `date '+%F %T'` "IP has changed to: $new"
    wget -O - http://freedns.afraid.org/dynamic/update.php?UmhISE9OaWRGSUNVTkRVQ1NkRktTVVVDOjEzMDE4OTUw >> $DYNDNS/freedns_maldonadoga_mooo_com.log
